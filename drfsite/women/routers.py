@@ -8,7 +8,7 @@ class MyCastomRouter(routers.SimpleRouter):  # this is roter
             mapping={"get": "list"},
             name="{basename}-list",
             detail=False,
-            initkwargs={"suffix": "List"},
+            initkwargs={"suffix": "List"},  # jsfhbgb
         ),
         routers.Route(
             url=r"^{prefix}/{lookup}/$",
