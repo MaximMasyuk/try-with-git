@@ -1,14 +1,14 @@
 from rest_framework import routers
 
 
-class MyCastomRouter(routers.SimpleRouter):
+class MyCastomRouter(routers.SimpleRouter):  # this is roter
     routes = [
         routers.Route(
             url=r"^{prefix}/$",
             mapping={"get": "list"},
             name="{basename}-list",
             detail=False,
-            initkwargs={"suffix": "List"},
+            initkwargs={"suffix": "List"},  # jsfhbgb
         ),
         routers.Route(
             url=r"^{prefix}/{lookup}/$",
